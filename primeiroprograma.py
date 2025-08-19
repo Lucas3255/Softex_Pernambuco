@@ -1,29 +1,26 @@
-import time
+tamanho = int(input("Qual o tamanho da arvore: "))
+tronco = int(max(1, tamanho / 3))
+galhos = 1
 
-def carregar():
-    for i in range(4):
-        print(" o")
-        time.sleep(0.5)
 
-while True:
-    tamanho = int(input("Qual o tamanho sua árvore vai ter?\n >> "))
-    tronco = int(tamanho / 2) 
+for i in range(tamanho):    #define a altura da arvore.
+    for j in range(tamanho - i - 1):    #dá espaçamentos.
+        print(" ", end="")
+ 
+    for k in range(galhos):
+        print("o", end="")
 
-    for i in range(tamanho):
-        for a in range(tamanho - i):
-            print(" ", end="") 
-        for j in range(i * 2 + 1):
-            print("o", end="")  
-        print()  
 
-    for a in range(tronco):
-        for espaco in range(tamanho):
-            print(" ", end="") 
-        print("|")  
+    galhos = galhos + 1 * 2
+    print("")
 
-    time.sleep(1)
 
-    escolha = input("-------------------------------\nGostaria de fazer de novo? (s/n)\n >> ").lower()
-    if escolha != "s":
-        carregar()
-        break
+espacos_tronco = tamanho - 1  
+
+
+for j in range(espacos_tronco):
+    print(" ", end="")
+
+
+for i in range(tronco):
+    print("|", end="")
