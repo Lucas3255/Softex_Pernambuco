@@ -13,9 +13,11 @@ Por fim imprima o tabuleiro na tela, deixando cada linha da matriz abaixo da out
 
 tabuleiro = [['[ ]' for i in range(8)] for j in range(8)]
 
+linhaPea = [pea] * 8
+
 tabuleiro[0] = ["tor", "cav", "bis", "rai", "rei", "bis", "cav", "tor"]
-tabuleiro[1] = ["pea"] * 8
-tabuleiro[6] = ["pea"] * 8
+tabuleiro[1] = linhaPea
+tabuleiro[6] = linhaPea
 tabuleiro[7] = ["tor", "cav", "bis", "rei", "rai", "bis", "cav", "tor"]
 
 print("")
