@@ -14,12 +14,18 @@ class ContaBancaria():
         self.saldo = saldo
     
     def depositar(self, valor):
-        self.saldo += valor
-        print("\nDeposito Realizado!")
-        print(f"Saldo Atual: {conta.saldo:.2f}")
+        if valor <= 0:
+            print("\nO valor deve ser maior que 0.")
+        
+        else:
+            self.saldo += valor
+            print("\nDeposito Realizado!")
+            print(f"Saldo Atual: {conta.saldo:.2f}")
         
     def sacar(self, valor):
-        if valor > self.saldo:
+        if valor <= 0:
+            print("\nO valor deve ser maior q 0.")
+        elif valor > self.saldo:
             print(f"\nSaldo Insuficiente!\nSaldo Atual: {conta.saldo:.2f}")
         else:
             self.saldo -= valor
