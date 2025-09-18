@@ -11,7 +11,7 @@
 <p><strong>Instituição:</strong> Softex Pernambuco.<br>
   <strong>Modalidade:</strong> Presencial.<br>
   <strong>Carga Horária:</strong> 6 horas semanais.<br>
-  <strong>Período:</strong> 08/2025 até 02/2026.<br>
+  <strong>Período:</strong> 08/2025 até 01/2026.<br>
   <strong>Instrutor:</strong> Frederico Favaro</p>
 
 <h3>🛠️ Tecnologias Utilizadas</h3>
