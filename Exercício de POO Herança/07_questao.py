@@ -4,8 +4,6 @@
  de status() será chamada? Use Administrador.__mro__ para mostrar a ordem.
 '''
 
-#ainda preciso rever esse código!!!
-
 class Autenticacao():
     def login(self, usuario, senha):
         usuarios_validos = {
@@ -19,8 +17,9 @@ class Autenticacao():
         else:
             return "Falha no Login!"
         
-    def status():
-        ...
+    def status(self):
+        return "Status da Autenticacao: Sistema de Login Ativo."
+
 
 class Permissao():
     def verificar_permissao(self, usuario, recurso):
@@ -35,8 +34,9 @@ class Permissao():
         else:
             return f"Permissão Negada! {usuario} não pode {recurso}."
         
-    def status():
-        ...
+    def status(self):
+        return "Status da Permissao: Sistema de permissões ativo"
+
 
 class Administrador(Autenticacao, Permissao):
     def __init__(self, nome):
@@ -48,14 +48,23 @@ class Administrador(Autenticacao, Permissao):
     def verificarPermissao(self, usuario, recurso):
         return self.verificar_permissao(usuario, recurso)
     
+    def testar_status(self):
+        return self.status()
+    
 
 adm = Administrador("Pedro Cavalcante")
 
 print("")
+print(Administrador.__mro__)
+
 print(adm.fazerLogin("adm", "adm123"))
 print(adm.fazerLogin("adm", "dfhgsh"))
 
 print("")
 print(adm.verificarPermissao("adm", "excluir"))
 print(adm.verificarPermissao("usuario", "excluir"))
+print("")
+
+print(adm.status())
+print(adm.testar_status())
 print("")
