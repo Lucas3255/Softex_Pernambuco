@@ -11,12 +11,13 @@
 <p><strong>Instituição:</strong> Softex Pernambuco.<br>
   <strong>Modalidade:</strong> Presencial.<br>
   <strong>Carga Horária:</strong> 6 horas semanais.<br>
-  <strong>Período:</strong> 08/2025 até 02/2026.<br>
+  <strong>Período:</strong> 08/2025 até 01/2026.<br>
   <strong>Instrutor:</strong> Frederico Favaro</p>
 
 <h3>🛠️ Tecnologias Utilizadas</h3>
 <div align="left">
   <img src = "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white", alt = "Python">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
   <img src = "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white", alt = "Django">
   <img src = "https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white", alt = "Git">
 </div>
